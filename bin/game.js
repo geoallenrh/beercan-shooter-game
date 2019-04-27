@@ -20,7 +20,7 @@
         " ",
         "The OpenShift Evangelist Team presents",
         " ",
-        "A simple Beer can and bootle shooter game"
+        "A simple beer can and bottle shooter game"
     ];
     var locations = [
         [160, 400, 50, 50],  // left fence 1
