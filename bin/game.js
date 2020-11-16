@@ -4,6 +4,7 @@
     //**  Shootem-up game to teach what openshift resources can be killed
     //*******************************************************************
     var game;
+    var sound = true;
     var gunSight;
     var gunshot;
     var currObject;  // This is the sprite in the game representing the current OpenShift Object
@@ -77,6 +78,7 @@
       
       if(checkOverlap(gunSight, currObject)) {
           // Add the emitter for the explosion and play the yeehaw for target hit
+          //game.sound.mute = sound
           explosion.play();
           emitter = game.add.emitter(0, 0, 100);
           // TODO: [JMP] Check that we're providing back the type
@@ -110,6 +112,10 @@
     function displayScore(user, score) {
       scoreText.text = "User: " + user + "\nScore: " + score;
     }
+
+    function muteSound() {
+        game.sound.mute = true;
+      }
 
     function create() {
         // load the playfield background image
