@@ -113,10 +113,6 @@
       scoreText.text = "User: " + user + "\nScore: " + score;
     }
 
-    function muteSound() {
-        game.sound.mute = true;
-      }
-
     function create() {
         // load the playfield background image
         var playfield = game.add.image(game.world.centerX, game.world.centerY, 'playfield');
